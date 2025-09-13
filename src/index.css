@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    /* EdTech Color Palette */
-    --background: 248 250 252;
-    --foreground: 215 28% 17%;
+    /* Minimal Classy Color Palette */
+    --background: 0 0% 98%;
+    --foreground: 220 14% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 28% 17%;
+    --card-foreground: 220 14% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 28% 17%;
+    --popover-foreground: 220 14% 17%;
 
-    /* Educational Blue Primary */
-    --primary: 214 95% 36%;
+    /* Refined Primary - Subtle Charcoal */
+    --primary: 220 14% 17%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 214 95% 45%;
-    --primary-dark: 214 95% 28%;
+    --primary-light: 220 9% 46%;
+    --primary-dark: 220 39% 11%;
 
-    /* Success Green Secondary */
-    --secondary: 158 64% 52%;
-    --secondary-foreground: 0 0% 98%;
-    --secondary-light: 158 64% 60%;
-    --secondary-dark: 158 64% 44%;
+    /* Elegant Secondary - Warm Gray */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 220 14% 17%;
+    --secondary-light: 0 0% 98%;
+    --secondary-dark: 0 0% 90%;
 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 100 7% 46%;
 
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220 8.9% 46.1%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 220 14% 17%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -40,86 +40,70 @@
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 98%;
 
-    --success: 158 64% 52%;
+    --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 214 95% 36%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 220 14% 17%;
 
     --radius: 0.75rem;
 
-    /* EdApt Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--secondary-light)) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 14.3% 98%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(220 14.3% 98%) 100%);
+    /* Minimal Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 14% 17%) 0%, hsl(220 9% 46%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(0 0% 90%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 14% 17%) 0%, hsl(220 39% 11%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(0 0% 96%) 100%);
 
-    /* Shadows */
-    --shadow-soft: 0 1px 3px 0 hsl(220 43% 11% / 0.1), 0 1px 2px -1px hsl(220 43% 11% / 0.1);
-    --shadow-medium: 0 4px 6px -1px hsl(220 43% 11% / 0.1), 0 2px 4px -2px hsl(220 43% 11% / 0.1);
-    --shadow-large: 0 10px 15px -3px hsl(220 43% 11% / 0.1), 0 4px 6px -4px hsl(220 43% 11% / 0.1);
-    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.1), 0 0 20px hsl(var(--primary) / 0.15);
+    /* Refined Shadows */
+    --shadow-soft: 0 1px 3px 0 hsl(220 14% 17% / 0.04), 0 1px 2px -1px hsl(220 14% 17% / 0.04);
+    --shadow-medium: 0 4px 6px -1px hsl(220 14% 17% / 0.06), 0 2px 4px -2px hsl(220 14% 17% / 0.06);
+    --shadow-large: 0 10px 15px -3px hsl(220 14% 17% / 0.08), 0 4px 6px -4px hsl(220 14% 17% / 0.08);
+    --shadow-glow: 0 0 0 1px hsl(220 14% 17% / 0.04), 0 0 20px hsl(220 14% 17% / 0.06);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 215 28% 17%;
+    --background: 220 39% 11%;
     --foreground: 0 0% 98%;
 
-    --card: 215 27% 21%;
+    --card: 220 14% 17%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 215 27% 21%;
+    --popover: 220 14% 17%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 214 95% 45%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 214 95% 52%;
-    --primary-dark: 214 95% 38%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 220 14% 17%;
+    --primary-light: 0 0% 90%;
+    --primary-dark: 0 0% 85%;
 
-    --secondary: 158 64% 48%;
+    --secondary: 220 9% 46%;
     --secondary-foreground: 0 0% 98%;
-    --secondary-light: 158 64% 55%;
-    --secondary-dark: 158 64% 40%;
+    --secondary-light: 220 7% 65%;
+    --secondary-dark: 220 5% 35%;
 
-    --muted: 215 20% 25%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 220 9% 46%;
+    --muted-foreground: 220 7% 60%;
 
-    --accent: 215 20% 25%;
+    --accent: 220 9% 46%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 215 20% 25%;
-    --input: 215 20% 25%;
-    --ring: 214 95% 45%;
+    --border: 220 9% 46%;
+    --input: 220 9% 46%;
+    --ring: 0 0% 98%;
 
     /* Dark mode gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(215 27% 21%) 0%, hsl(215 25% 24%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(215 25% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 14% 17%) 0%, hsl(220 39% 11%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 14% 17%) 0%, hsl(220 9% 46%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 39% 11%) 0%, hsl(220 14% 15%) 100%);
   }
 }
 
@@ -177,7 +161,7 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 bg-clip-text text-transparent;
   }
 
   .quiz-option {
