@@ -201,7 +201,8 @@
   }
 
   .progress-fill {
-    @apply h-full bg-gradient-primary transition-all duration-500 ease-out;
+    @apply h-full transition-all duration-500 ease-out;
+    background: var(--gradient-primary);
   }
 
   .loading-pulse {
